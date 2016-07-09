@@ -95,6 +95,9 @@
 						dict)
 				'failed))
 		
+		((leaf-node? (car pat))
+			'failed)
+
 		;; If expr is not a simple expression
 		(else	(match 	(cdr expr)
 				(cdr pat)
